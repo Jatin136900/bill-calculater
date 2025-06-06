@@ -2,79 +2,78 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-
-
-.mainone {
-    background-color: rgb(156, 55, 55);
-    padding: 50px 60px;
-    border-radius: 20px;
-}
-
-.parents {
-    margin: 50px;
-    display: flex;
-    justify-content: space-around;
-
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-    background-color: rgb(59, 59, 203);
+    background: linear-gradient(135deg, #3b3bbd, #4c6ef5);
     color: #fff;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parents {
+    display: flex;
+    gap: 40px;
+    background-color: #1e1e2f;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    flex-wrap: wrap;
+}
+
+.mainone, .maintwo {
+    background-color: #2d2d44;
+    padding: 30px;
+    border-radius: 15px;
+    width: 300px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 label {
     display: block;
-    margin: 5px 0;
-    font-size: 20px;
+    margin-bottom: 8px;
+    font-size: 18px;
+    color: #ddd;
 }
 
-button {
-    background-color: #fff;
-    color: #000;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+input[type="number"] {
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
     margin-bottom: 20px;
-    transition: all 0.3s ease;
+    font-size: 16px;
+    color: #333;
 }
 
-button:hover {
-    background-color: green;
+input[type="number"]::placeholder {
+    color: #888;
+}
+
+button.option-btn {
+    background-color: #4c6ef5;
     color: #fff;
+    padding: 10px 15px;
+    margin: 5px 5px 15px 0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-#child {
-    margin-bottom: 10px;
-    padding: 8px 10px 8px 20px;
-    border-radius: 20px;
-    background-color: #fff;
-    color: #000;
-    display: inline-block;
-    font-size: 16px;
-    border: blue solid 1px;
+button.option-btn:hover {
+    background-color: #3b5bdb;
 }
 
-#childfirst {
-    margin-bottom: 10px;
-    padding: 8px 10px 8px 20px;
-    border-radius: 20px;
-    background-color: #fff;
-    color: #000;
-    display: inline-block;
-    font-size: 16px;
-    border: blue solid 1px;
+span {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffce54;
 }
 
-#childsecond {
-    margin-bottom: 10px;
-    padding: 8px 10px 8px 20px;
-    border-radius: 20px;
-    background-color: #fff;
-    color: #000;
-    display: inline-block;
-    font-size: 16px;
-    border: blue solid 1px;
-}
+

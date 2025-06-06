@@ -10,48 +10,35 @@
 
 <body>
 
-
     <div class="parents">
 
         <div class="mainone">
-            <label for="">Bill Amount</label><br>
-            <input type="number" id="child" placeholder="Enter bill amount"><br>
+            <label for="child">Bill Amount</label><br />
+            <input type="number" id="child" placeholder="Enter bill amount" /><br />
 
-            <label for="">Tip (in %)</label><br>
-            <button id="first">5%</button>
-            <button id="second">10%</button>
-            <button id="third">15%</button>
-            <button id="fourth">20%</button><br>
+            <label for="">Tip (in %)</label><br />
+            <button class="option-btn" data-value="5">5%</button>
+            <button class="option-btn" data-value="10">10%</button>
+            <button class="option-btn" data-value="15">15%</button>
+            <button class="option-btn" data-value="20">20%</button><br />
 
+            <label for="childfirst">Custom Tip (%)</label><br />
+            <input type="number" id="childfirst" placeholder="Enter custom tip %" /><br />
 
-            <label for="">custom Tip (%)</label><br>
-            <input type="number" id="childfirst" placeholder="Enter custom tip %"><br>
-
-
-            <label for="">No. of people</label><br>
-            <input type="number" id="childsecond" placeholder="Enter number of people"><br>
-
+            <label for="childsecond">No. of People</label><br />
+            <input type="number" id="childsecond" placeholder="Enter number of people" /><br />
         </div>
-
-
-
-
 
         <div class="maintwo">
-            <label for="">Tip amount :</label>
-            <span id="tipamount">0</span><br>
-            <label for="">Total Bill :</label>
-            <span id="totalbill"> 0</span><br>
-            <label for="">Each person pays :</label>
-            <span id="billno.">0</span>
+            <label>Tip Amount:</label>
+            <span id="tipamount">0</span><br />
+            <label>Total Bill:</label>
+            <span id="totalbill">0</span><br />
+            <label>Each Person Pays:</label>
+            <span id="billno">0</span>
         </div>
 
-
-
-
     </div>
-
-
 
 
     <script src="script.js"></script>
